@@ -31,6 +31,7 @@ Plugin 'vim-fugitive/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,6 +49,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='gruvbox'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
@@ -198,7 +200,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+    colorscheme gruvbox
 catch
 endtry
 
