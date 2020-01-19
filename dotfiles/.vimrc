@@ -50,6 +50,7 @@ filetype plugin indent on    " required
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='gruvbox'
+let g:airline_powerline_fonts = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
@@ -205,6 +206,7 @@ catch
 endtry
 
 set background=dark
+hi Normal guibg=NONE ctermbg=NONE
 
 " Set extra options when running in GUI mode
 if has("gui_running")
