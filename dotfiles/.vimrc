@@ -77,7 +77,7 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 let g:ycm_extra_conf_globlist = ['~/.vim/*','!~/*']
 
 " Add ycmd global config
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 " Disable file load confirmation
 let g:ycm_confirm_extra_conf = 0
@@ -110,6 +110,8 @@ nmap <leader>w :w!<cr>
 command W w !sudo tee % > /dev/null
 
 
+" Invoke Ycm GoTo
+nnoremap <leader>go :YcmCompleter GoTo<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
